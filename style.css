@@ -1,0 +1,80 @@
+*{  font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: linear-gradient(to right,rgb(241, 172, 172),rgb(118, 118, 189));
+}
+
+#container{
+    box-sizing: border-box;
+    
+}
+
+#time{
+     /* border: 1px solid black;  */
+     display: flex;
+     gap: 5px;
+     width: 300px;
+    font-weight: 700;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 3%;
+    color: rgba(255, 255, 255, 0.651);
+    
+}
+
+#Ampm{
+    display: inline-block;
+    
+    font-weight: 600;
+    
+}
+
+
+#current-date{
+    font-weight: 700;
+    
+}
+
+#weatherElements{
+    margin-top:10% ;
+    border: 1px solid black;
+    
+    width: 300px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: large;
+    line-height: 24px;
+}
+
+#futureForecast{
+    /* border: 1px solid red; */
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.futureweather{
+    border: 1px solid black;
+    width: 200px;
+    text-align: center;
+    line-height: 22px;
+    font-weight: 500;
+}
+
+#futureDate{
+    font-weight: 600;
+}
+
+#map{
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    width: 60%;
+    height: 400px;
+    margin-left: 550px;
+    margin-top: -450px;
+}

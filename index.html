@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather project</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+</head>
+<body>
+     
+ <div id="container">
+  <div id="time">
+      <h3>10:43 <span id="Ampm">AM</span></h3> 
+      <div id="date">Sunday 12, Dec</div>
+  </div>
+
+
+
+<div id="input">
+    <label for="city">Enter the city:</label><br>
+    <input type="text" id="city"><br>
+    <button onclick="getCity()">submit</button>
+
+</div>
+
+
+  <div  id="weatherElements">
+    <img src= "http://openweathermap.org/img/wn/02d@2x.png" alt="">
+    <div class="currentWeather">Clear sky</div>
+    <div class="currentWeather" id="current-date">Sun 12 december</div>
+    <div class="currentWeather">humidity</div>
+    <div class="currentWeather">40%</div>
+    <div class="currentWeather">Pressure</div>
+    <div class="currentWeather">44%</div>
+    <div class="currentWeather">sunrise</div>
+    <div class="currentWeather">05:00 AM</div>
+    <div class="currentWeather">Sunset</div>
+    <div class="currentWeather">4:30 PM</div>
+    
+</div>
+ 
+<div id='map'></div>
+
+
+  
+</div>
+
+
+
+ <div id="futureForecast">
+
+   
+  <div class="futureweather">
+    <img src=" http://openweathermap.org/img/wn/02d@2x.png" >      
+    <div class="temp" id="futureDate">Mon 13, december</div>
+    
+   <div class="temp">day</div>
+   <div class="temp">24 &#176C</div>
+   <div class="temp">night</div>
+   <div class="temp">17 &#176C</div>
+   </div>  
+   
+
+
+ </div>
+
+
+</body>
+</html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+<script src="script.js"></script>
